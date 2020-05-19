@@ -1,24 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex-container'>
+      <div className='menu-item'>
+      <div className= 'content'>
+      <h1 className='title'>Hats</h1>
+      <span className='subtitle'>Shop now</span>
+    </div>
+    </div>
+
+    <div className='menu-item'>
+      <div className= 'content'>
+      <h1 className='title'>Jackets</h1>
+      <span className='subtitle'>Shop now</span>
+    </div>
+    </div>
+
+    <div className='menu-item'>
+      <div className= 'content'>
+      <h1 className='title'>Sleepers</h1>
+      <span className='subtitle'>Shop now</span>
+    </div>
+    </div>
+
+    <div className='menu-item'>
+      <div className= 'content'>
+      <h1 className='title'>Mens</h1>
+      <span className='subtitle'>Shop now</span>
+    </div>
+    </div>
+
+    <div className='menu-item'>
+      <div className= 'content'>
+      <h1 className='title'>Womens</h1>
+      <span className='subtitle'>Shop now</span>
+    </div>
+    </div>
+
+   
     </div>
   );
 }
