@@ -29,7 +29,6 @@ constructor(){
               imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
               size: 'large',
               id: 4,
-              Size:'large',
               linkUrl: 'shop/womens'
             },
             {
@@ -37,7 +36,6 @@ constructor(){
               imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
               size: 'large',
               id: 5,
-              Size:'large',
               linkUrl: 'shop/mens'
             }
           ]
@@ -49,8 +47,8 @@ render()
    return(
    <div className = "directory-menu">
        {
-        this.state.sections.map(({title,id,imageUrl,Size}) =>
-        <MenuItem key={id} title = {title} imageurl={imageUrl}  size = {Size}/>
+        this.state.sections.map(({id, ...otherSectionProps}) =>
+        <MenuItem key={id} {...otherSectionProps}/>
         )
        }
    </div>
