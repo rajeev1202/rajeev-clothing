@@ -5,7 +5,7 @@ import {BrowserRouter as Router,
 import './App.css';
 import HomePage from './pages/homepage/homePageComponent';
 import ShopPage from './pages/shoppage/shopPageComponent';
-
+import Header from './components/header/headerComponent';
 
 
 
@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
     <div>
+      <Header/>
   <Switch>
     <Route exact path='/' component= {HomePage}/>
     <Route path='/shoppage' component={ShopPage}/>

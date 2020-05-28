@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    height: 60px;
+}
+.logo-container{
+    padding:25px;
+}
+.header-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    margin-right: 40px;
+}
+.shop-link ,.contacts-link{
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+}
